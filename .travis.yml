@@ -84,8 +84,8 @@ deploy:
     - secure: "uoyLbdtkGr8IDnyECv747iVkAsxMdqQR1v9wfwbEj4lsSHZ2E+Y3ShZMmV2AZUK86ajksBOvfMUYVo8P2JTQUsQtduu9SAIFF2MxxIVQbwmdF27cvnSUDFQjkU6h2UDNbgdi2I6rtH2g1Adhx/C45my0NQdvbhB9fEV3H+Z8g0YmoBDu3MZFGZknpf/PpNzaoGtHATo+0VooqCrAZhR9M1igGQF2ibU8z8E9xm04ehSjlMoXWv15GWmwOmkjQSe/mkeOUJ9Bl2LuIk3PcIv7uJNle5GgteQM+++iru59kZSXTLqih2peZVT7BLQ3c4gUZCtLASFPXwoQH2n4VMz4OeGv4b9LMw9bvwQ+eM8//enDDyIy2fP6KQu2BdLIScNX6B4eitxVMEcOXRHOc4xmlXqNloCOtGONaZ7w3OnwPj/O38ThM8c4riq1sh1TFBabRge8VGkBiKU3cDYPdGM2uMxST0swcrgBqu0UZ45xCftbF1tqJjs6K6ZS1v298KVlHcxyfdSJTDKCEOyTJXH6at2yYhQZ9RKrimZE5aiK0h3dsflKrmMXKDWWmQmAB7WxRQhNjEDuULvhq0f5z+oLDbL1hGSYM09196fyUDLeRY7wdYoIVaH3ebk5j6b+ar9RaQ16MoERBxR1ULUcs5gJHxCWPwyb4jRZBeMJJwzNF3Q="
   file_glob: true
   file:
-    - "${LIVECV}"
-    - "${LIVECV_DOC}"
+    - live*.tar.gz
+    - doc*.tar.gz
   skip_cleanup: true
   on:
     tags: true
