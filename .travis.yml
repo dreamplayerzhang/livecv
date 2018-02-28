@@ -20,7 +20,8 @@ install:
   - echo $OPENCV_VERSION
   - export OPENCV_DIR=/usr/local/Cellar/opencv/$OPENCV_VERSION
   - echo $OPENCV_DIR
-  - cd ../../build
+  - echo $PWD
+  - cd build
   - wget https://github.com/livecv/livecv-deploy-kit/archive/master.zip
   - unzip master.zip
   - mv livecv-deploy-kit-master/* .
