@@ -27,10 +27,9 @@ install:
   - mv livecv-deploy-kit-master/* .
   - wget http://download.qt.io/official_releases/qt/5.7/5.7.0/qt-opensource-mac-x64-clang-5.7.0.dmg
   - ls
-  - mkdir /opt
-  - hdiutil attach -mountpoint /opt/installqt qt-opensource-mac-x64-clang-5.7.0.dmg
-  - ls /opt/installqt
-  - /opt/installqt/qt-opensource-mac-x64-clang-5.7.0.app/Contents/MacOS/qt-opensource-mac-x64-clang-5.7.0 --script resources/install-qt-macos.qs --verbose --silent -platform minimal
+  - hdiutil attach -mountpoint installqt qt-opensource-mac-x64-clang-5.7.0.dmg
+  - ls installqt
+  - ./installqt/qt-opensource-mac-x64-clang-5.7.0.app/Contents/MacOS/qt-opensource-mac-x64-clang-5.7.0 --script resources/install-qt-macos.qs --verbose --silent -platform minimal
   - ls /opt/qt/5.7/clang_64
   - export QTDIR=/opt/qt/5.7/clang_64
 
