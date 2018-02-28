@@ -10,7 +10,7 @@ sudo: required
 install:
   - brew update
   - brew install python3
-  - rm '/usr/local/lib/python2.7/site-packages/numpy/__config__.py'
+  - rm -r '/usr/local/lib/python2.7/site-packages/numpy'
   - rm '/usr/local/bin/f2py'
   - brew install numpy
   - brew info opencv3
